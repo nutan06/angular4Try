@@ -1,0 +1,20 @@
+<div class="books" >
+    <div class="card">
+      <div class = "card-block">
+      <div class="card-header">
+        <h3 class = "card-title">Name of Book</h3>
+        <h4 class = "card-title">{{ book.Name }}<a href="#" class="btn btn-link" (click)="book.hide = !book.hide">Book information</a> |<a href="#" class="btn btn-link" (click)="deleteBook(book)" >Remove from list</a>
+       </h4>
+      </div>
+      <div class="card-block">
+          <h4 class = "card-title">Author of Book</h4>
+        <p class="card-text">{{ book.Author }}</p>
+      </div>
+      <div class="card-header"[hidden] = "book.hide">
+          <h4 class = "card-title">Description</h4>
+            <p class="card-text">{{ book.Description }}</p>
+      </div>
+    </div>
+    </div>
+    <br>
+  </div>

@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="card-header">
+      Add New Book
+    </div>
+    <div class="card-block">
+      <form (submit)="addBook()">
+        <div class="form-group">
+          <label for="text">Book Name</label>
+          <input type="text" class="form-control" [(ngModel)]="Name" name="Name" required/>
+        </div>
+        
+        <div class="form-group">
+          <label for="text">Book Author</label>
+          <input type="text" class="form-control" [(ngModel)]="Author" name="Author" required/>
+        </div>
+              
+        <div class="form-group">
+          <label for="text">Book Description</label>
+          <input type="text" class="form-control" [(ngModel)]="Description" name="Description" required/>
+        </div>
+          <input type="submit" class="btn btn-primary" value="Submit">
+      </form>
+    </div>
+  </div>
+  <br>
